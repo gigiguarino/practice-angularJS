@@ -1,4 +1,5 @@
 app.controller('controller', function($scope, $http) {
+	alert("here");
 	$http.get('transactions.json')
 		.success(function(data)){
 			$scope.results1 = data;
