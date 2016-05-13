@@ -1,4 +1,4 @@
-app.controller('controller', function($scope, $http) {
+app.controller('controller', ['$scope', function($scope, $http) {
 	alert("here");
 	$http.get('transactions.json')
 		.success(function(data)){
@@ -10,4 +10,4 @@ app.controller('controller', function($scope, $http) {
 			$scope.results2 = data;
 			alert("!!!!");
 		});
-});
+}]);
