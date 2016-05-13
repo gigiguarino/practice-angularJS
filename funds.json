@@ -1,20 +1,18 @@
-{
-	"objects": [
-		{
-			"title": "fund1",
-			"descriptoin": "description1"
-		},
-		{
-			"title": "fund2",
-			"descriptoin": "description2"
-		},
-		{
-			"title": "fund3",
-			"descriptoin": "description3"
-		},
-		{
-			"title": "fund4",
-			"descriptoin": "description4"
-		}
-	]
-}
+[
+	{
+		"title": "fund1",
+		"descriptoin": "description1"
+	},
+	{
+		"title": "fund2",
+		"descriptoin": "description2"
+	},
+	{
+		"title": "fund3",
+		"descriptoin": "description3"
+	},
+	{
+		"title": "fund4",
+		"descriptoin": "description4"
+	}
+]
