@@ -1,6 +1,6 @@
 var app = angular.module('search', []);
 
-app.controller('controller', ['$scope', function($scope, $http) {
+app.controller('controller', ['$scope', '$http', function($scope, $http) {
 	alert("here");
 	$http.get('transactions.json')
 		.success(function(data){
