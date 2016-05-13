@@ -18,20 +18,20 @@
 			</div>
 
 			<div class="results">
-				<div class="transactions" data-ng-show="transactions-check">
-					<div data-ng-show="funds-check && transactions-check">
+				<div class="transactions" ng-show="transactions-check">
+					<div ng-show="funds-check && transactions-check">
 						<h1>Transactions:</h1>
 					</div>
-					<div ng-repeat="transaction in results1.transactions">
+					<div ng-repeat="transaction in results1">
 						<p>{{ transaction.title }}</p>
 						<p>{{ transaction.description }}</p>
 					</div>
 				</div>
-				<div class="funds" data-ng-show="funds-check">
-					<div data-ng-show="funds-check && transactions-check">
+				<div class="funds" ng-show="funds-check">
+					<div ng-show="funds-check && transactions-check">
 						<h1>Funds:</h1>
 					</div>
-					<div ng-repeat="fund in result2.funds">
+					<div ng-repeat="fund in results2">
 						<p>{{ fund.title }}</p>
 						<p>{{ fund.description }}</p>
 					</div>
