@@ -6,10 +6,10 @@
 	<body ng-app="search">
 		<div class="main" ng-controller="controller">
 			<div>
-				<label><input type="checkbox" ng-model="funds-check"> 
+				<label><input type="checkbox" ng-model="fcheck"> 
 					Funds
 				</label>
-				<label><input type="checkbox" ng-model="transactions-check"> 
+				<label><input type="checkbox" ng-model="tcheck"> 
 					Gift Transactions
 				</label>
 				<br>
@@ -18,8 +18,8 @@
 			</div>
 
 			<div class="results">
-				<div class="transactions" ng-show="transactions-check">
-					<div ng-show="funds-check && transactions-check">
+				<div class="transactions" ng-show="tcheck">
+					<div ng-show="fcheck && tcheck">
 						<h1>Transactions:</h1>
 					</div>
 					<div ng-repeat="t in results1">
@@ -27,8 +27,8 @@
 						<p>{{ t.description }}</p>
 					</div>
 				</div>
-				<div class="funds" ng-show="funds-check">
-					<div ng-show="funds-check && transactions-check">
+				<div class="funds" ng-show="fcheck">
+					<div ng-show="fcheck && tcheck">
 						<h1>Funds:</h1>
 					</div>
 					<div ng-repeat="f in results2">
