@@ -6,17 +6,15 @@
 	<body ng-app="search">
 		<div class="main" ng-controller="controller">
 			<div>
-				<form id="search-form">
-					<label><input type="checkbox" ng-model="funds-check"> 
-						Funds
-					</label>
-					<label><input type="checkbox" ng-model="transactions-check"> 
-						Gift Transactions
-					</label>
-					<br>
-					<input type="text"></input>
-					<input type="submit" value="Search"></input>
-				</form>
+				<label><input type="checkbox" ng-model="funds-check"> 
+					Funds
+				</label>
+				<label><input type="checkbox" ng-model="transactions-check"> 
+					Gift Transactions
+				</label>
+				<br>
+				<input type="text"></input>
+				<input type="submit" value="Search"></input>
 			</div>
 
 			<div class="results">
