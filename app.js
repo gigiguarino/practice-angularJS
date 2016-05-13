@@ -3,7 +3,7 @@ var app = angular.module('search', []);
 app.controller('controller', ['$scope', function($scope, $http) {
 	alert("here");
 	$http.get('transactions.json')
-		.success(function(data)){
+		.success(function(data){
 			$scope.results1 = data;
 			alert("!");
 		});
